@@ -1,47 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-18T00:33:22 IST" name="Default suite" finished-at="2024-01-18T00:33:42 IST" duration-ms="19457">
+  <suite started-at="2024-02-22T00:21:52 IST" name="Suite" finished-at="2024-02-22T00:22:48 IST" duration-ms="55827">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.productErrorValidation()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" name="productErrorValidation" class="automation.tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" name="submitOrder" class="automation.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-01-18T00:33:22 IST" name="Default test" finished-at="2024-01-18T00:33:42 IST" duration-ms="19457">
-      <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" started-at="2024-01-18T00:33:22 IST" name="setUpClass" finished-at="2024-01-18T00:33:23 IST" duration-ms="767" status="PASS">
+    <test started-at="2024-02-22T00:21:52 IST" name="Place Order Test" finished-at="2024-02-22T00:22:30 IST" duration-ms="37648">
+      <class name="automation.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:21:52 IST" name="launchApplication" finished-at="2024-02-22T00:21:57 IST" duration-ms="4378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:21:57 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-22T00:22:11 IST" duration-ms="14174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@261b9a37]]>
+                <![CDATA[{password=Test!234, product=ZARA COAT 3, email=blackjack@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" started-at="2024-01-18T00:33:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-18T00:33:42 IST" duration-ms="18583" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:11 IST" name="tearDown" finished-at="2024-02-22T00:22:11 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:11 IST" name="launchApplication" finished-at="2024-02-22T00:22:13 IST" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:13 IST" name="submitOrder" data-provider="getData" finished-at="2024-02-22T00:22:27 IST" duration-ms="14284" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Positive Test of Submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from ecommerce website"]]>
+                <![CDATA[{password=Test!234, product=ADIDAS ORIGINAL, email=davidlite@mail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@3e08ff24]" started-at="2024-01-18T00:33:42 IST" name="tearDownClass" finished-at="2024-01-18T00:33:42 IST" duration-ms="47" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:27 IST" name="tearDown" finished-at="2024-02-22T00:22:27 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- cucumber.TestNGTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:27 IST" name="launchApplication" finished-at="2024-02-22T00:22:29 IST" duration-ms="1919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistory()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:29 IST" name="orderHistory" finished-at="2024-02-22T00:22:30 IST" depends-on-methods="automation.tests.SubmitOrderTest.submitOrder" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.SubmitOrderTest@4f9a2c08]" started-at="2024-02-22T00:22:30 IST" name="tearDown" finished-at="2024-02-22T00:22:30 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.tests.SubmitOrderTest -->
+    </test> <!-- Place Order Test -->
+    <test started-at="2024-02-22T00:22:30 IST" name="Error Validation Test" finished-at="2024-02-22T00:22:48 IST" duration-ms="17949">
+      <class name="automation.tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" started-at="2024-02-22T00:22:30 IST" name="launchApplication" finished-at="2024-02-22T00:22:32 IST" duration-ms="2110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" started-at="2024-02-22T00:22:32 IST" name="loginErrorValidation" finished-at="2024-02-22T00:22:33 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" started-at="2024-02-22T00:22:33 IST" name="tearDown" finished-at="2024-02-22T00:22:33 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" started-at="2024-02-22T00:22:33 IST" name="launchApplication" finished-at="2024-02-22T00:22:35 IST" duration-ms="1819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" started-at="2024-02-22T00:22:35 IST" name="productErrorValidation" finished-at="2024-02-22T00:22:48 IST" duration-ms="13420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.ErrorValidationTest@2445445a]" started-at="2024-02-22T00:22:48 IST" name="tearDown" finished-at="2024-02-22T00:22:48 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.tests.ErrorValidationTest -->
+    </test> <!-- Error Validation Test -->
+  </suite> <!-- Suite -->
 </testng-results>

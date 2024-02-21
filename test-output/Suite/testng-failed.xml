@@ -10,9 +10,22 @@
         <methods>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="orderHistory"/>
+          <include name="submitOrder"/>
         </methods>
       </class> <!-- automation.tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Place Order Test(failed) -->
+  <test thread-count="5" name="Error Validation Test(failed)">
+    <classes>
+      <class name="automation.tests.ErrorValidationTest">
+        <methods>
+          <include name="loginErrorValidation"/>
+          <include name="productErrorValidation"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- automation.tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

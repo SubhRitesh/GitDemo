@@ -19,9 +19,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -45,7 +43,7 @@ public class BaseTest {
 			if(browserName.contains("headless")) {
 				options.addArguments("headless");// to run test in headless mode
 			}
-			WebDriverManager.chromedriver().setup();  //This will automatically download the chromedriver in the project
+//			WebDriverManager.chromedriver().setup();  //This will automatically download the chromedriver in the project
 			driver =new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1440, 900)); // OPTIONAL: to run in fullscreen mode especially for headless mode
 		}else if(browserName.equalsIgnoreCase("firefox")) {
